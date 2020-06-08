@@ -1,0 +1,123 @@
+.SingleShop {
+    height: 100%;
+    width: 100%;
+    &_container {
+        &_cover {
+            height: 200px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            &_box {
+                
+                height: 100px;
+                width: 100px;
+                border: .6px solid #D9D9D9;
+                margin-right: 8%;
+                border-radius: 5px;
+                
+            }
+        }
+        &_bottom {
+            box-sizing: border-box;
+            border-bottom: 1px solid #d9d9d9;
+            height: 40px;
+            display: flex;
+            justify-content: flex-end;
+            &_box {
+                width: 100%;
+                max-width: 800px;
+                padding: 0 10px 0 0;
+                display: flex;
+                height: 100%;
+                align-items: flex-end;
+                justify-content: space-between;
+                &_left {
+                    width: fit-content;
+                    // max-width: 800px;
+                    display: flex;
+                    height: 100%;
+                    align-items: flex-end;
+                    &_btn{
+                        padding: 5px 15px;
+                        text-align:center;
+                        height: fit-content;
+                        margin:0 5px 5px 5px;
+                        width: fit-content;
+                        box-sizing: border-box;
+                        box-shadow: 0 0 0 1px #d9d9d9;
+                        border: none;
+                        color: #00C79D;
+                        border-radius: 32px;
+                        font-size: 12px;
+                        text-decoration: none;
+                        font-weight: bold;
+                        transition: all .1s ease-in;
+                        &:hover{
+                            cursor: pointer;
+                            background: transparent;
+                            color: #fff;
+                            box-sizing: border-box;
+                            background: #00C79D;
+                        }
+                    }
+                }
+                &_right {
+                    width: fit-content;
+                    &_btn {
+                        &_top {
+                            width: 100%;
+                            box-sizing: border-box;
+                            // grid-row: 1/2;
+                            // grid-column: 1/2;
+                            // border-bottom: .9px solid #efefef;
+                            &_container {
+                                display: flex;
+                                flex-direction: row;
+                                background: #fff;
+                                margin: 5px auto;
+                                border: 1px solid #D9D9D9;
+                                width: 100%;
+                                max-width: 300px;
+                                border-radius: 30px;
+                                overflow: hidden;
+                                &_searchbar {
+                                    background-color: #D9D9D9;
+                                    outline: none;
+                                    color: #000;
+                                    padding: 1px 10px;
+                                    flex: 1;
+                                    border: none;
+
+                                    font-family: "Segoe UI Light", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial,
+                                        sans-serif;
+                                    font-size: 0.9em;
+                                    &::placeholder {
+                                    color: #D9D9D9;
+                                    text-transform: capitalize;
+                                    font-family: "Segoe UI Light", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial,
+                                        sans-serif;
+                                    font-size: .7em;
+                                    /* font-weight: bold; */
+                                    /* transition: 0.2s; */
+                                    }
+                                }
+                                &_btn_search {
+                                    cursor: pointer;
+                                    color: #FFF;
+                                    text-decoration: none !important;
+                                    font-family: "Segoe UI Light", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial,
+                                        sans-serif;
+                                    font-size: .9em;
+                                    padding: 3px 15px;
+                                    background-color: #D9D9D9;
+                                    }
+                            }
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+}

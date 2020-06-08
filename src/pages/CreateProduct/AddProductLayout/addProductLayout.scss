@@ -1,0 +1,58 @@
+.AddProductLayout {
+    &_container {
+        &_title {
+            padding-top: 40px;
+            &_text {
+                margin: 0;
+                padding: 0;
+                font-size: 1.6em;
+                // color: #0CE822;
+            }
+            &_shop {
+                // border: 1px solid red;
+                width: 200px;
+                box-sizing: border-box;
+                border-radius: 3px;
+                padding: 5px 6px 7px 7px;
+                display: flex;
+                background-color: rgba($color: #9CFF00, $alpha: .5);
+                &_gravatar {
+                    width: 33px;
+                    height: 33px;
+                    overflow: hidden;
+                    border-radius: 3px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &_detail {
+                    margin-left: 8px;
+                    width: calc(100% - 40px);
+                    box-sizing: border-box;
+                    line-height: 17px;
+                    word-wrap: break-word;
+                    font-weight: 500;
+                    font-size: .9em;
+                    a {
+                        color:blueviolet;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Shop_detal_card {
+    display: flex;
+    color: green;
+    &_text {
+        font-weight: 400;
+    }
+    &_connects {
+        font-weight: 400;
+        margin: 0 9px 0 0;
+    }
+}

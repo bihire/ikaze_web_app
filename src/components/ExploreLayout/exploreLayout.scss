@@ -1,0 +1,52 @@
+.ExploreLayout {
+    margin-top: 100px;
+    &_container {
+        display: flex;
+        flex-direction: column;
+        &_top {
+            box-sizing: border-box;
+            border-bottom: 1px solid #d9d9d9;
+            height: 40px;
+            display: flex;
+            justify-content: space-around;
+            &_box {
+                width: fit-content;
+                display: flex;
+                height: 100%;
+                align-items: flex-end;
+                &_btn{
+                    padding: 5px 15px;
+                    flex:1 1 auto;
+                    text-align:center;
+                    height: fit-content;
+                    margin:0 5px 5px 5px;
+                    width: fit-content;
+                    box-sizing: border-box;
+                    box-shadow: 0 0 0 1px #d9d9d9;
+                    border: none;
+                    color: #00C79D;
+                    border-radius: 32px;
+                    font-size: 12px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: all .1s ease-in;
+                    &:hover{
+                        cursor: pointer;
+                        background: transparent;
+                        color: #fff;
+                        box-sizing: border-box;
+                        background: #00C79D;
+                    }
+                }
+            }
+        }
+        &_bottom {
+            box-sizing: border-box;
+            border-bottom: 1px solid #d9d9d9;
+            height: 40px;
+        }
+        &_children {
+            width: 100%;
+        }
+    }
+}
