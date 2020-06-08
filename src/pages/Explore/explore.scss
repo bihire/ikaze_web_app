@@ -1,0 +1,11 @@
+.Explore {
+    display: flex;
+    &_container {
+        max-width: 900px;
+        width: 100%;
+        margin: auto;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        height: 100%;
+    }
+}

@@ -1,0 +1,27 @@
+.MapOptions {
+    padding: 20px 5px;
+    height: 100%;
+    box-sizing: border-box;
+    &_container {
+        border: 1px solid #d9d9d9;
+        height: 100%;
+        border-radius: 5px;
+        display: grid;
+        grid-template-rows: 1fr fit-content(200px);
+        &_top {
+            grid-row: 1 / 2;
+        }
+        &_bottom {
+            grid-row: 2 / 3;
+            border-top: 1px solid #d9d9d9;
+            padding: 2px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(0, 100px));
+            grid-gap: 10px;
+            &_box {
+                height: 100px;
+                background: #d9d9d9;
+            }
+        }
+    }
+}
