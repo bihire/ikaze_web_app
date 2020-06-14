@@ -21,8 +21,12 @@
 
 @media only screen and (max-width: 600px) {
   .MainLayout_container {
+    // display: flex;
+    width: 100%;
+
     grid-template-columns:  1fr;
     &_left {
+        width: 100%;
         border-right: none;
         height: 100%;
         padding: 20px 15px;

@@ -1,0 +1,25 @@
+.SingleImageUploader {
+    &_container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &_NoImage {
+            cursor: pointer;
+            width: fit-content;
+            justify-self: center;
+            width: 100%;
+            max-width: 300px;
+            .h5_text_description {
+                padding: 0;
+                margin: 0;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+        }
+    }
+}

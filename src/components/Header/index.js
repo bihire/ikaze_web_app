@@ -73,18 +73,19 @@ const SmallAvatar = withStyles((theme) => ({
 }))(Avatar);
 
 const Header = ()=> {
-        const [count, setCount] = useState(100);
-    
         const classes = useStyles();
         useEffect(() => {
             window.onscroll = function () {
-                var pixel = window.scrollY;
-                var newheader = 100 - pixel;
-
-                if (newheader > 56) {
-                    document.getElementById('header_container').setAttribute("style", "height:" + newheader + "px");
-                }
-            }
+                const maxHeight = 100;
+                const minHeight = 56;
+                let pixel = window.scrollY;
+                let pixelPosition = maxHeight - pixel;
+                pixelPosition = pixelPosition > maxHeight ? maxHeight : pixelPosition;
+                pixelPosition = pixelPosition < minHeight ? minHeight : pixelPosition;
+                document
+                    .getElementById("header_container")
+                    .setAttribute("style", "height:" + pixelPosition + "px");
+            };
         });
 
 

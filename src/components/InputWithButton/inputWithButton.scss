@@ -1,0 +1,41 @@
+.InputWithButton_container {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    margin: 5px auto;
+    border: 1px solid #D9D9D9;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+    &_searchbar {
+        background-color: #fff;
+        color: #000;
+        padding: 4px 20px;
+        flex: 1;
+        border: none;
+
+        font-family: "Segoe UI Light", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial,
+            sans-serif;
+        font-size: 1em;
+        &::placeholder {
+        color: #D9D9D9;
+        text-transform: capitalize;
+        font-family: "Segoe UI Light", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial,
+            sans-serif;
+        font-size: 1.1em;
+        /* font-weight: bold; */
+        /* transition: 0.2s; */
+        }
+    }
+    &_btn_search {
+        cursor: pointer;
+        color: #FFF;
+        text-decoration: none !important;
+        font-family: "Segoe UI Light", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial,
+            sans-serif;
+        font-size: 1.5em;
+        padding: 3px 15px;
+        background-color: #D9D9D9;
+        }
+}

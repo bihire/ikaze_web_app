@@ -9,8 +9,10 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "draft-js": "^0.11.6",
     "history": "^4.10.1",
     "leaflet": "^1.6.0",
+    "material-ui-chip-input": "^2.0.0-beta.2",
     "modernizr": "^3.11.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
@@ -21,10 +23,12 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-sizeme": "^2.6.12",
+    "react-text-mask": "^5.4.3",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-state-sync": "^3.1.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "text-mask-addons": "^3.8.0"
   },
   "scripts": {
     "start": "react-scripts start",

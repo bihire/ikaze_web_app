@@ -6,6 +6,7 @@ import Main from '../pages/Main';
 import ProductDetail from '../pages/ProductDetail';
 import Explore from '../pages/Explore';
 import SingleShop from '../pages/SingleShop';
+import AddProduct from '../pages/CreateProduct';
 import BusMap from '../pages/Maps';
 
 export default function index() {
@@ -17,6 +18,7 @@ export default function index() {
       <Route path="/explore" exact component={Explore} /> 
       <Route path="/shop/id" exact component={SingleShop} /> 
       <Route path="/map" exact component={BusMap} /> 
+      <Route path="/add_product" exact component={AddProduct} /> 
       <Route path="*" component={Error} />
     </Switch>
   );
